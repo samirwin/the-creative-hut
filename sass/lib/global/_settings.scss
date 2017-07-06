@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+
+// Font
+$global_font_size: 		16px;
+$font_family: 			'Raleway', sans-serif;
+$header_font_family: 	$font_family;
+$content_margin:		1.2rem;
+
+// Colours
+$black: 				#111;
+$white: 				#fff;
+$light_grey: 			#ecf0f1;
+$grey: 					#95a5a6;
+$primary_color: 		#3498db;
+$secondary_color: 		#2ecc71;
+$hover_color: 			#2980b9;
+
+// Grid
+$grid_columns: 			12;
+$grid_gap: 				20px;
+$grid_width: 			960px;

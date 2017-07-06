@@ -1,0 +1,18 @@
+
+#menu-main{
+	margin: 0;
+	display: flex;
+
+	li{
+		display: inline-block;
+		vertical-align: top;
+		flex: auto;
+		text-align: center;
+		margin: 0;
+
+		a{
+			display: block;
+			padding: 5px 0;
+		}
+	}
+}

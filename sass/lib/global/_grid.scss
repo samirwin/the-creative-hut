@@ -1,0 +1,33 @@
+
+.row {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: $grid_width;
+	font-size: 0;
+}
+
+.row [class*='col-'] {
+	display: inline-block;
+	vertical-align: top;
+	min-height: 1px;
+	font-size: $global_font_size;
+
+	&:first-of-type { margin-left: 0; }
+
+	&:last-of-type { margin-right: 0; }
+}   
+
+@for $i from 1 through $grid-columns {
+
+    .col-#{$i} {
+    	$col_percent: percentage($i / $grid_columns);
+    	$col_count: $grid_columns / $i;
+    	$row_gaps: $col_count - 1;
+
+    	width: calc(#{$col_percent} - (#{$grid_gap} * #{$row_gaps} / #{$col_count}) );
+    	margin-left: $grid_gap / 2;
+    	margin-right: $grid_gap / 2;
+    }
+
+}
